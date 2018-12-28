@@ -5,7 +5,7 @@
 spring-cloud 版本：Finchley.SR2
 spring-boot 版本：2.0.7.RELEASE
 
-
+===================================================================================
 zubaobei-eureka
 服务注册中心
 端口：8761
@@ -29,3 +29,10 @@ http://127.0.0.1:9000/api/person/23409012902
 zubaobei-common 公共模块
 
 zubaobei-mybatis-demo mybatis整合demo模块
+
+zubaobei-user 用户模块
+zubaobei-user-common  用户公共模块
+zubaobei-user-service 用户服务模块 端口9010
+
+zubaobei-web-manager 后台管理系统模块 端口 8088
+zubaobei-web-manager-api 后台管理系统API接口模块 端口9020
