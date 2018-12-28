@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.guotianchain.zubaobei.user.dao.UserMapper">
+    <resultMap id="BaseResultMap" type="com.guotianchain.zubaobei.user.model.User">
+        <id column="uid" jdbcType="VARCHAR" property="uid"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="password" jdbcType="VARCHAR" property="password"/>
+        <result column="mobile" jdbcType="VARCHAR" property="mobile"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+    </resultMap>
+    <sql id ="Base_OrderBy_Condition">
+        <if test="orderBy != null and orderBy !=''">
+            ORDER BY ${orderBy}
+        </if>
+    </sql>
+    <sql id="Base_Column_List">
+        u.uid as uid,
+        u.name as name,
+        u.password as password,
+        u.mobile as mobile,
+        u.status as status,
+        u.create_time as create_time,
+        u.update_time as update_time
+    </sql>
+    <sql id="Base_Set_Condition" >
+        <set >
+            <if test="name != null" >
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="mobile != null" >
+                mobile = #{mobile,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                status = #{status,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+    </sql>
+    <sql id="Base_Where_Condition" >
+        <if test="id != null and id != ''" >
+            AND ${alias}.id = #{id,jdbcType=BIGINT}
+        </if>
+        <if test="version != null" >
+            AND ${alias}.version = #{version,jdbcType=INTEGER}
+        </if>
+        <if test="loginName != null and loginName != ''" >
+            AND ${alias}.login_name = #{loginName,jdbcType=VARCHAR}
+        </if>
+        <if test="updateTime != null" >
+            AND ${alias}.update_time = #{updateTime,jdbcType=TIMESTAMP}
+        </if>
+    </sql>
+
+    <select id="selectUserByUID" resultMap="BaseResultMap">
+        SELECT
+          <include refid="Base_Column_List"/>
+        from
+          user u
+        WHERE
+          u.uid=#{uid,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        from
+        user u
+    </select>
+    <insert id="addUser" parameterType="com.guotianchain.zubaobei.user.model.User">
+        insert into user(
+        uid,
+        name,
+        mobile,
+        status,
+        create_time,
+        update_time)
+        VALUES (
+          #{uid,jdbcType=VARCHAR},
+          #{name,jdbcType=VARCHAR},
+          #{mobile,jdbcType=VARCHAR},
+          #{status,jdbcType=INTEGER},
+          #{createTime,jdbcType=TIMESTAMP},
+          #{updateTime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+    <update id="updateUserStatus">
+        UPDATE user
+        SET status = #{status,jdbcType=INTEGER}
+        WHERE uid = #{uid}
+    </update>
+    <update id="updateUser" parameterType="com.guotianchain.zubaobei.user.model.User">
+        UPDATE user
+        <include refid="Base_Set_Condition"/>
+        WHERE uid = #{uid,jdbcType=VARCHAR}
+    </update>
+    <update id="updateUserPassword">
+        UPDATE user
+        SET password = #{password,jdbcType=VARCHAR}
+        WHERE uid = #{uid,jdbcType=VARCHAR}
+    </update>
+    <update id="updateUserName">
+        UPDATE user
+        SET name = #{name,jdbcType=VARCHAR}
+        WHERE uid = #{uid,jdbcType=VARCHAR}
+    </update>
+    <delete id="deleteUserByUID">
+        delete from user
+        where uid = #{uid,jdbcType=VARCHAR}
+    </delete>
+
+</mapper>

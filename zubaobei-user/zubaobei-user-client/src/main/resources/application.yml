@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zubaobei-user-client
+
+server:
+  port: 9011
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

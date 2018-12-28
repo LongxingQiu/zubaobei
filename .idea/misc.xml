@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Kotlin2JsCompilerArguments">
+    <option name="sourceMapEmbedSources" />
+    <option name="sourceMapPrefix" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-eureka-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-eureka-service-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-eureka-service-invoker/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-mybatis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-user/zubaobei-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-user/zubaobei-user-client/pom.xml" />
+        <option value="$PROJECT_DIR$/zubaobei-web-manager-api/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

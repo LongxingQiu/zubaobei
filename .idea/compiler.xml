@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zubaobei-common" />
+        <module name="zubaobei-eureka" />
+        <module name="zubaobei-eureka-service-invoker" />
+        <module name="zubaobei-eureka-service-provider" />
+        <module name="zubaobei-gateway" />
+        <module name="zubaobei-mybatis-demo" />
+        <module name="zubaobei-user-api" />
+        <module name="zubaobei-user-client" />
+        <module name="zubaobei-user-common" />
+        <module name="zubaobei-user-service" />
+        <module name="zubaobei-web-manager" />
+        <module name="zubaobei-web-manager-api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="zubaobei" target="1.8" />
+      <module name="zubaobei-common" target="1.8" />
+      <module name="zubaobei-eureka" target="1.8" />
+      <module name="zubaobei-eureka-service" target="1.8" />
+      <module name="zubaobei-eureka-service-invoker" target="1.8" />
+      <module name="zubaobei-eureka-service-provider" target="1.8" />
+      <module name="zubaobei-gateway" target="1.8" />
+      <module name="zubaobei-mybatis-demo" target="1.8" />
+      <module name="zubaobei-user" target="1.8" />
+      <module name="zubaobei-user-api" target="1.8" />
+      <module name="zubaobei-user-client" target="1.8" />
+      <module name="zubaobei-user-common" target="1.8" />
+      <module name="zubaobei-user-service" target="1.8" />
+      <module name="zubaobei-web-manager" target="1.8" />
+      <module name="zubaobei-web-manager-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

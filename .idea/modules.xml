@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/zubaobei.iml" filepath="$PROJECT_DIR$/zubaobei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-common/zubaobei-common.iml" filepath="$PROJECT_DIR$/zubaobei-common/zubaobei-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-eureka/zubaobei-eureka.iml" filepath="$PROJECT_DIR$/zubaobei-eureka/zubaobei-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-eureka-service-invoker/zubaobei-eureka-service-invoker.iml" filepath="$PROJECT_DIR$/zubaobei-eureka-service-invoker/zubaobei-eureka-service-invoker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-eureka-service-provider/zubaobei-eureka-service-provider.iml" filepath="$PROJECT_DIR$/zubaobei-eureka-service-provider/zubaobei-eureka-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-gateway/zubaobei-gateway.iml" filepath="$PROJECT_DIR$/zubaobei-gateway/zubaobei-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-mybatis-demo/zubaobei-mybatis-demo.iml" filepath="$PROJECT_DIR$/zubaobei-mybatis-demo/zubaobei-mybatis-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-user/zubaobei-user.iml" filepath="$PROJECT_DIR$/zubaobei-user/zubaobei-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-user/zubaobei-user-client/zubaobei-user-client.iml" filepath="$PROJECT_DIR$/zubaobei-user/zubaobei-user-client/zubaobei-user-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-user/zubaobei-user-common/zubaobei-user-common.iml" filepath="$PROJECT_DIR$/zubaobei-user/zubaobei-user-common/zubaobei-user-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-user/zubaobei-user-service/zubaobei-user-service.iml" filepath="$PROJECT_DIR$/zubaobei-user/zubaobei-user-service/zubaobei-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-web-manager/zubaobei-web-manager.iml" filepath="$PROJECT_DIR$/zubaobei-web-manager/zubaobei-web-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zubaobei-web-manager-api/zubaobei-web-manager-api.iml" filepath="$PROJECT_DIR$/zubaobei-web-manager-api/zubaobei-web-manager-api.iml" />
+    </modules>
+  </component>
+</project>

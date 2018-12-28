@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: zubaobei-user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/zubaobei?characterEncoding=utf8&useSSL=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 9010
+
+eureka:
+  instance:
+    hostname: localhost
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+##公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage: com.guotianchain.zubaobei.user.model
+  mapperLocations: classpath:mapper/*.xml
